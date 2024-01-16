@@ -17,7 +17,7 @@ services:
       # el nombre o la ip del gestor de base de datos
       - HOST=mydb
       # usuario admnistrador/ superusuario del gestor de la base de datos
-      - USER=odoo
+      - USER=postgres
       # contraseña del admiistrador del gestor de base de datos
       - PASSWORD=myodoo
 
