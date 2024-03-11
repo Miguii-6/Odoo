@@ -19,12 +19,12 @@ services:
       # usuario admnistrador/ superusuario del gestor de la base de datos
       - USER=odoo
       # contraseña del admiistrador del gestor de base de datos
-      - PASSWORD=myodoo
+      - PASSWORD=odoo
 
   # servicio gestor de base de datos
   mydb:
     # imagen utilizada y su version
-    image: postgres:15
+    image: postgres
     # mapeo de puertos para poder acceder a las bases de datos desde la IDE
     ports:
       - "5432:5432"
@@ -34,6 +34,6 @@ services:
       #no podemos cambiar porque odoo por defecto se conecta como "postgres
       - POSTGRES_USER=odoo
       # contraseña superuser para conectarse desde fuera
-      - POSTGRES_PASSWORD=myodoo
+      - POSTGRES_PASSWORD=odoo
 
       - POSTGRES_DB=postgres
